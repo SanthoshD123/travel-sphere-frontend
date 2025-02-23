@@ -1,45 +1,17 @@
-Below is an example README.md file for your Angular frontend repository:
+Got it! Since filtering and comparison are not yet implemented, I'll provide a simpler **README.md** that reflects the current state of your frontend. You can update it later when you add filtering and comparison features.
 
 ---
 
 ```markdown
 # Travel Sphere Frontend
 
-This repository contains the Angular frontend for the Travel Sphere project. The application allows users to browse, filter, and compare travel packages aggregated from multiple travel agencies.
+This is the Angular frontend for the **Travel Sphere** project. It provides a user interface to browse travel packages aggregated from different travel agencies.
 
 ## Features
 
-- **Travel Package Listing:** Fetches travel packages from the Spring Boot backend.
-- **Filtering:** Filter travel packages by destination.
-- **Comparison:** Select and compare travel packages side-by-side.
-- **Routing:** Navigate between Home, Travel Packages, and About pages using Angular standalone components.
-
-## Directory Structure
-
-```
-travel-sphere-frontend/
-├── src/
-│   ├── app/
-│   │   ├── about/
-│   │   │   └── about.component.ts
-│   │   ├── home/
-│   │   │   └── home.component.ts
-│   │   ├── travel-packages/
-│   │   │   ├── travel-packages.component.ts
-│   │   │   ├── travel-packages.component.html
-│   │   │   └── travel-packages.component.css
-│   │   ├── app.component.ts
-│   │   ├── app.component.html
-│   │   ├── app.component.css
-│   │   └── app.config.ts
-│   ├── assets/
-│   ├── index.html
-│   ├── main.ts
-│   └── styles.css
-├── angular.json
-├── package.json
-└── README.md
-```
+- **View Travel Packages:** Fetches and displays travel packages from the Spring Boot backend.
+- **Basic Navigation:** Home, Travel Packages, and About pages.
+- **API Integration:** Connects to the backend at `http://localhost:8080/api/v1/packages`.
 
 ## Prerequisites
 
@@ -72,33 +44,38 @@ ng serve --open
 ```
 This will open the application in your default browser at `http://localhost:4200`.
 
-## Usage
+## Upcoming Features
 
-- **Home Page:** Provides an introduction and overview of the Travel Sphere project.
-- **Travel Packages:** Browse all available travel packages. Use the filter input to search by destination and select packages for comparison.
-- **About:** Information about the platform.
+- **Filtering:** Users will be able to filter travel packages based on destination, price, and duration.
+- **Comparison:** Users will be able to compare selected travel packages side-by-side.
 
 ## Deployment
 
-For production builds:
+To create a production build:
 ```bash
 ng build --configuration production
 ```
-This will create a production-ready build in the `dist/` folder. You can then deploy these files to your preferred hosting provider.
-
-## Contributing
-
-Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+This will generate a production-ready build in the `dist/` folder.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the **MIT License**.
 
 ## Contact
 
-For questions or support, please reach out via [GitHub Issues](https://github.com/SanthoshD123/travel-sphere-frontend/issues).
+For any issues, please open a ticket on [GitHub Issues](https://github.com/SanthoshD123/travel-sphere-frontend/issues).
 ```
 
 ---
 
-Save the above content as **README.md** in the root of your repository. This README provides an overview of the project, installation instructions, usage, and deployment guidance. Adjust any sections as needed for your specific setup or additional details.
+### Steps to Add This README to Your Repo:
+
+1. **Save this file as `README.md` in your frontend project folder.**
+2. **Add and commit it to GitHub:**
+   ```bash
+   git add README.md
+   git commit -m "Add README for frontend"
+   git push origin main
+   ```
+
+Let me know if you need further modifications! 🚀
