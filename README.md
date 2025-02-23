@@ -1,6 +1,3 @@
-Got it! Since filtering and comparison are not yet implemented, I'll provide a simpler **README.md** that reflects the current state of your frontend. You can update it later when you add filtering and comparison features.
-
----
 
 ```markdown
 # Travel Sphere Frontend
