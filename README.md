@@ -1,78 +1,111 @@
-
-```markdown
 # Travel Sphere Frontend
 
-This is the Angular frontend for the **Travel Sphere** project. It provides a user interface to browse travel packages aggregated from different travel agencies.
+A modern Angular-based platform for comparing and booking travel packages from multiple agencies.
 
-## Features
+## 🌟 Overview
 
-- **View Travel Packages:** Fetches and displays travel packages from the Spring Boot backend.
-- **Basic Navigation:** Home, Travel Packages, and About pages.
-- **API Integration:** Connects to the backend at `http://localhost:8080/api/v1/packages`.
+Travel Sphere is a comprehensive travel package aggregator that connects travelers with travel agencies, enabling easy search, comparison, and booking of travel packages including tours, flights, and hotels - all in one place.
 
-## Prerequisites
+## ✨ Core Features
 
-- **Node.js** and **npm** installed ([Download Node.js](https://nodejs.org))
-- **Angular CLI** installed globally:
-  ```bash
-  npm install -g @angular/cli
-  ```
+- **Travel Package Search & Display**
+  - View detailed package information
+  - Advanced filtering options
+  - Comparison capabilities
 
-## Installation
+- **User Management**
+  - User registration and login
+  - Profile management
+  - Save favorite packages
 
-1. **Clone the Repository:**
+- **Travel Agency Integration**
+  - View agency profiles
+  - Browse agency-specific packages
+  - Rating and review system
+
+## 🛠️ Technical Stack
+
+- **Frontend Framework:** Angular 
+- **State Management:** NgRx (planned)
+- **UI Components:** Angular Material
+- **API Integration:** REST APIs with Spring Boot backend
+- **Styling:** SCSS
+
+## 📋 Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- Angular CLI (`npm install -g @angular/cli`)
+
+## 💻 Setup Instructions
+
+1. **Clone the Repository**
    ```bash
-   git clone git@github.com:SanthoshD123/travel-sphere-frontend.git
+   git clone https://github.com/SanthoshD123/travel-sphere-frontend.git
    cd travel-sphere-frontend
    ```
 
-2. **Install Dependencies:**
+2. **Install Dependencies**
    ```bash
    npm install
    ```
 
-## Running the Application
+3. **Start Development Server**
+   ```bash
+   ng serve
+   ```
+   Access the application at `http://localhost:4200`
 
-Make sure your Spring Boot backend is running and accessible at `http://localhost:8080`.
+## 🔄 API Integration
 
-To start the Angular development server:
+The frontend connects to our Spring Boot backend at `http://localhost:8080/api/v1/` with the following main endpoints:
+
+- `/packages` - Travel package management
+- `/agencies` - Travel agency management
+- `/users` - User management
+
+## 🎯 Upcoming Features
+
+- Advanced search with multiple filters
+- Package comparison tool
+- User reviews and ratings
+- Interactive travel planning tools
+- Booking system integration
+- Real-time price alerts
+- Personalized recommendations
+
+## 🧪 Running Tests
+
 ```bash
-ng serve --open
+# Unit Tests
+ng test
+
+# End-to-End Tests
+ng e2e
 ```
-This will open the application in your default browser at `http://localhost:4200`.
 
-## Upcoming Features
+## 📦 Build
 
-- **Filtering:** Users will be able to filter travel packages based on destination, price, and duration.
-- **Comparison:** Users will be able to compare selected travel packages side-by-side.
-
-## Deployment
-
-To create a production build:
+Generate a production build:
 ```bash
 ng build --configuration production
 ```
-This will generate a production-ready build in the `dist/` folder.
 
-## License
+## 👥 Contributing
 
-This project is licensed under the **MIT License**.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Contact
+## 👨‍💻 Developer
 
-For any issues, please open a ticket on [GitHub Issues](https://github.com/SanthoshD123/travel-sphere-frontend/issues).
-```
+- **Developer:** Santhosh D
+- **GitHub:** [SanthoshD123](https://github.com/SanthoshD123)
+
+## 📄 License
+
+This project is licensed under the MIT License.
 
 ---
-
-### Steps to Add This README to Your Repo:
-
-1. **Save this file as `README.md` in your frontend project folder.**
-2. **Add and commit it to GitHub:**
-   ```bash
-   git add README.md
-   git commit -m "Add README for frontend"
-   git push origin main
-   ```
-
-Let me know if you need further modifications! 🚀
