@@ -8,10 +8,9 @@ This is the Angular frontend for the **Travel Sphere** project. It provides a us
 - **Basic Navigation:** Home, Travel Packages, and About pages
 - **API Integration:** Connects to the backend at `http://localhost:8080/api/v1/packages`
 
-## 🛠️ Technical Stack
-
-- **Frontend Framework:** Angular 
-- **API Integration:** REST APIs with Spring Boot backend
+## 🛠️ Tech Stack
+- **Frontend**: Angular, TypeScript, Angular Material (UI)
+- **Backend**: Connected to Spring Boot API ([travel-sphere](https://github.com/SanthoshD123/travel-sphere.git))
 
 ## 📋 Prerequisites
 
