@@ -1,8 +1,28 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { ApplicationConfig } from '@angular/core';
+import { provideRouter, Routes } from '@angular/router';
 
-import { routes } from './app.routes';
+const routes: Routes = [
+  {
+    path: '',
+    loadComponent: () =>
+      import('./travel-packages/travel-packages.component').then(
+        (m) => m.TravelPackagesComponent
+      ),
+  },
+  {
+    path: 'about',
+    loadComponent: () =>
+      import('./about/about.component').then((m) => m.AboutComponent),
+  },
+  {
+    path: 'packages',
+    loadComponent: () =>
+      import('./travel-packages/travel-packages.component').then(
+        (m) => m.TravelPackagesComponent
+      ),
+  },
+];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
+  providers: [provideRouter(routes)],
 };
