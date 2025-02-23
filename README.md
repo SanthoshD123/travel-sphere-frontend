@@ -1,47 +1,31 @@
 # Travel Sphere Frontend
 
-A modern Angular-based platform for comparing and booking travel packages from multiple agencies.
+This is the Angular frontend for the **Travel Sphere** project. It provides a user interface to browse travel packages aggregated from different travel agencies.
 
-## 🌟 Overview
+## 🌟 Current Features
 
-Travel Sphere is a comprehensive travel package aggregator that connects travelers with travel agencies, enabling easy search, comparison, and booking of travel packages including tours, flights, and hotels - all in one place.
-
-## ✨ Core Features
-
-- **Travel Package Search & Display**
-  - View detailed package information
-  - Advanced filtering options
-  - Comparison capabilities
-
-- **User Management**
-  - User registration and login
-  - Profile management
-  - Save favorite packages
-
-- **Travel Agency Integration**
-  - View agency profiles
-  - Browse agency-specific packages
-  - Rating and review system
+- **View Travel Packages:** Fetches and displays travel packages from the Spring Boot backend
+- **Basic Navigation:** Home, Travel Packages, and About pages
+- **API Integration:** Connects to the backend at `http://localhost:8080/api/v1/packages`
 
 ## 🛠️ Technical Stack
 
 - **Frontend Framework:** Angular 
-- **State Management:** NgRx (planned)
-- **UI Components:** Angular Material
 - **API Integration:** REST APIs with Spring Boot backend
-- **Styling:** SCSS
 
 ## 📋 Prerequisites
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
-- Angular CLI (`npm install -g @angular/cli`)
+- Node.js and npm installed ([Download Node.js](https://nodejs.org))
+- Angular CLI installed globally:
+  ```bash
+  npm install -g @angular/cli
+  ```
 
 ## 💻 Setup Instructions
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/SanthoshD123/travel-sphere-frontend.git
+   git clone git@github.com:SanthoshD123/travel-sphere-frontend.git
    cd travel-sphere-frontend
    ```
 
@@ -50,62 +34,31 @@ Travel Sphere is a comprehensive travel package aggregator that connects travele
    npm install
    ```
 
-3. **Start Development Server**
+3. **Run the Application**
+   Make sure your Spring Boot backend is running and accessible at `http://localhost:8080`.
+   Start the Angular development server:
    ```bash
-   ng serve
+   ng serve --open
    ```
-   Access the application at `http://localhost:4200`
-
-## 🔄 API Integration
-
-The frontend connects to our Spring Boot backend at `http://localhost:8080/api/v1/` with the following main endpoints:
-
-- `/packages` - Travel package management
-- `/agencies` - Travel agency management
-- `/users` - User management
+   This will open the application in your default browser at `http://localhost:4200`.
 
 ## 🎯 Upcoming Features
 
-- Advanced search with multiple filters
-- Package comparison tool
-- User reviews and ratings
-- Interactive travel planning tools
-- Booking system integration
-- Real-time price alerts
-- Personalized recommendations
+- **Filtering:** Users will be able to filter travel packages based on destination, price, and duration
+- **Comparison:** Users will be able to compare selected travel packages side-by-side
 
-## 🧪 Running Tests
+## 📦 Deployment
 
-```bash
-# Unit Tests
-ng test
-
-# End-to-End Tests
-ng e2e
-```
-
-## 📦 Build
-
-Generate a production build:
+To create a production build:
 ```bash
 ng build --configuration production
 ```
+This will generate a production-ready build in the `dist/` folder.
 
-## 👥 Contributing
+## 👨‍💻 Contact
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 👨‍💻 Developer
-
-- **Developer:** Santhosh D
-- **GitHub:** [SanthoshD123](https://github.com/SanthoshD123)
+- For any issues, please open a ticket on GitHub Issues
 
 ## 📄 License
 
 This project is licensed under the MIT License.
-
----
